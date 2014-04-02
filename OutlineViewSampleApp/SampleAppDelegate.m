@@ -23,7 +23,14 @@
     
     if ([menuItem action] == @selector(copySpecific:))
     {
-        isValid = YES;
+        if ([[self.outlineViewTreeController selectedObjects] count] > 0)
+        {
+            isValid = YES;
+        }
+        else
+        {
+            isValid = NO;
+        }
     }
     
     return isValid;
@@ -32,6 +39,18 @@
 - (IBAction)copySpecific:(id)sender
 {
     NSLog(@"dafa %@",[self.outlineViewTreeController selectedObjects]);
+    
+    NSDictionary *dict = [[self.outlineViewTreeController selectedObjects] objectAtIndex:0];
+    
+    NSString *pboardString = [NSString stringWithString:[dict valueForKey:@"category"]];
+    
+    pboardString = [pboardString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    
+    [pb declareTypes:@[NSTabularTextPboardType, NSStringPboardType] owner:self];
+    [pb setString:pboardString forType:NSTabularTextPboardType];
+    [pb setString:pboardString forType:NSStringPboardType];
 }
 
 @end
