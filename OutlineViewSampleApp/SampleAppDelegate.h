@@ -11,5 +11,9 @@
 @interface SampleAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic,strong) NSArray *array;
+@property (assign) IBOutlet NSTreeController *outlineViewTreeController;
+
+- (IBAction)copySpecific:(id)sender;
 
 @end

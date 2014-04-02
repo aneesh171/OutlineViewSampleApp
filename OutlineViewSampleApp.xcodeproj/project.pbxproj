@@ -18,6 +18,7 @@
 		5AA2C9B618EB83F0007B59C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2C99518EB83F0007B59C7 /* Cocoa.framework */; };
 		5AA2C9BE18EB83F0007B59C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2C9BC18EB83F0007B59C7 /* InfoPlist.strings */; };
 		5AA2C9C018EB83F0007B59C7 /* OutlineViewSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2C9BF18EB83F0007B59C7 /* OutlineViewSampleAppTests.m */; };
+		5AA2C9CA18EB855B007B59C7 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2C9C918EB855B007B59C7 /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5AA2C9BB18EB83F0007B59C7 /* OutlineViewSampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OutlineViewSampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		5AA2C9BD18EB83F0007B59C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5AA2C9BF18EB83F0007B59C7 /* OutlineViewSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutlineViewSampleAppTests.m; sourceTree = "<group>"; };
+		5AA2C9C918EB855B007B59C7 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = data.plist; path = OutlineViewSampleApp/data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		5AA2C98918EB83F0007B59C7 = {
 			isa = PBXGroup;
 			children = (
+				5AA2C9C918EB855B007B59C7 /* data.plist */,
 				5AA2C99B18EB83F0007B59C7 /* OutlineViewSampleApp */,
 				5AA2C9B918EB83F0007B59C7 /* OutlineViewSampleAppTests */,
 				5AA2C99418EB83F0007B59C7 /* Frameworks */,
@@ -234,6 +237,7 @@
 				5AA2C9A018EB83F0007B59C7 /* InfoPlist.strings in Resources */,
 				5AA2C9AE18EB83F0007B59C7 /* Images.xcassets in Resources */,
 				5AA2C9A618EB83F0007B59C7 /* Credits.rtf in Resources */,
+				5AA2C9CA18EB855B007B59C7 /* data.plist in Resources */,
 				5AA2C9AC18EB83F0007B59C7 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
